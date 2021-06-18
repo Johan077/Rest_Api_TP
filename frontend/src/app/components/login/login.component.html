@@ -1,0 +1,23 @@
+<form (submit)="singip()" class="login-form">
+    <div class="card-header">
+        Iniciar Sesion 
+    </div>
+  <p class="login-text">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-lock fa-stack-1x"></i>
+    </span>
+  </p>
+  <div class="form-group">
+      <input type="email" name="email" [(ngModel)]="user.email" class="form-control" autofocus="true" required="true" placeholder="Correo" />
+  </div>
+  <div class="form-group">
+      <input type="password" name="password" [(ngModel)]="user.password" class="form-control" required="true" placeholder="Contraseña" />
+  </div>
+  <button type="submit"  class="btn btn-primary btn-block login-submit" > 
+    Ingresar
+  </button>
+</form>
+<a href="#" class="login-forgot-pass">¿Olvidaste tu contraseña?</a>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div>
